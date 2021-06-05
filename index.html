@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedar Medical College Admission</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3>Sedar Medical College Admission</h3>
+    <form onsubmit="return display();">
+        <div id="form">
+            <table>
+                <tr>
+                    <th>Student Name</th>
+                    <td>
+                        <input type="text" name="stdname" id="sname" placeholder="Enter the student name" required />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Phone Number</th>
+                    <td>
+                        <input type="text" name="phone" id="phno" placeholder="Enter the phone number" required />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Admission Id</th>
+                    <td>
+                        <input type="text" name="adm" id="aid" placeholder="Enter the admission id" required />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Date of Admission</th>
+                    <td>
+                        <input type="date" name="doa" id="admissiondate" required />
+                    </td>
+                </tr>
+                <tr>
+                    <th>Department Name</th>
+                    <td>
+                        <select name="Dept" id="deptname" required>
+                            <option value="" disabled selected>Select Department</option>
+                            <option value="mbbs">MBBS</option>
+                            <option value="bds">BDS</option>
+                            <option value="bhms">BHMS</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Prefer College Hostel</th>
+                    <th>
+                        <span id="hostel">
+                            <input type="radio" id="yes" value="Yes" name="hostel" required>Yes
+                            <input type="radio" id="no" value="No" name="hostel">No
+                        </span>
+                    </th>
+                </tr>
+                <tr>
+                    <th>First Graduate</th>
+                    <th><input type="checkbox" name="fst" id="firstGraduate"> Click if you are first Graduate</th>
+                </tr>
+            </table>
+            <input type="submit" value="CONFIRM ADMISSION" id="submit">
+    </form>
+    <div id="result"></div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
